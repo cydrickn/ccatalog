@@ -1,0 +1,98 @@
+fields:
+    product_name:
+        label: Name
+        required: true
+        span: auto
+        type: text
+    product_slug:
+        label: Slug
+        required: true
+        span: auto
+        preset: product_name
+        type: text
+tabs:
+    fields:
+        product_brand:
+            label: Brand
+            span: left
+            tab: Info
+            type: relation
+            emptyOption: '--- Selection Empty ---'
+            nameFrom: brand_name
+        product_preview_image:
+            label: 'Preview Image'
+            type: mediafinder
+            mode: image
+            imageHeight: 260
+            imageWidth: 260
+            tab: Info
+            span: right
+        product_is_active:
+            label: Active
+            type: switch
+            tab: Info
+            span: auto
+        product_description:
+            label: Description
+            type: markdown
+            size: small
+            tab: Info
+            span: left
+        product_content:
+            type: markdown
+            size: huge
+            mode: split
+            tab: Content
+        product_price:
+            type: number
+            label: Price
+            tab: Properties
+            format: 2
+        product_properties:
+            type: partial
+            tab: Properties
+            context: update
+        product_categories:
+            oc.commentPosition: ''
+            nameFrom: category_name
+            descriptionFrom: description
+            span: full
+            type: relation
+            tab: Categories
+        product_tags:
+            nameFrom: tag_name
+            descriptionFrom: description
+            span: full
+            type: relation
+            tab: Tags
+        product_images:
+            type: repeater
+            tab: Images
+            form:
+                fields:
+                    image:
+                        type: mediafinder
+                        mode: image
+                        imageHeight: 260
+                        imageWidth: 260
+                        span: left
+                        label: Image
+        product_meta_title:
+            label: 'Meta Title'
+            oc.commentPosition: ''
+            span: auto
+            type: text
+            tab: SEO
+        product_meta_keywords:
+            label: 'Meta Keywords'
+            type: taglist
+            separator: comma
+            tab: SEO
+            span: auto
+        product_meta_description:
+            label: 'Meta Description'
+            size: ''
+            oc.commentPosition: ''
+            span: full
+            type: textarea
+            tab: SEO

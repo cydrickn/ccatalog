@@ -1,0 +1,13 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    brand_logo:
+        label: Logo
+        searchable: false
+        type: partial
+    brand_name:
+        label: Brand
+    brand_short_description:
+        label: Short Description

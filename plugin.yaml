@@ -1,0 +1,6 @@
+plugin:
+    name: 'cyd293.ccatalog::lang.plugin.name'
+    description: 'cyd293.ccatalog::lang.plugin.description'
+    author: 'Cydrick Nonog'
+    icon: oc-icon-cubes
+    homepage: ''

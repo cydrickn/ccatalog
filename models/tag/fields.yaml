@@ -1,0 +1,13 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    tag_name:
+        label: Tag
+        span: auto
+    tag_slug:
+        label: Slug
+        span: auto
+        preset: tag_name
+        required: true

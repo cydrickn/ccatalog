@@ -1,0 +1,39 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    property_name:
+        label: Name
+        span: auto
+    property_slug:
+        label: Slug
+        span: auto
+        preset: property_name
+        required: true
+    property_type:
+        label: Type
+        span: auto
+        type: dropdown
+        options:
+            string: String
+            textarea: Text
+            number: Number
+            switch: Switch
+            dropdown: Dropdown
+    property_values:
+        label: Values
+        span: auto
+        type: repeater
+        trigger:
+            action: show
+            field: property_type
+            condition: value[dropdown]
+        form:
+            fields:
+                name:
+                    label: Name
+                    span: auto
+                value:
+                    label: Value
+                    span: auto

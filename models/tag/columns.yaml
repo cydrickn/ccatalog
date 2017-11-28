@@ -1,0 +1,10 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    tag_name:
+        label: Tag
+    tag_slug:
+        label: Slug
+        

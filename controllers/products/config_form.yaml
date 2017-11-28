@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Product
+
+# Model Form Field configuration
+form: $/cyd293/ccatalog/models/product/fields.yaml
+
+# Model Class name
+modelClass: Cyd293\CCatalog\Models\Product
+
+# Default redirect location
+defaultRedirect: cyd293/ccatalog/products
+
+# Create page
+create:
+    title: Create Product
+    redirect: cyd293/ccatalog/products/update/:product_id
+    redirectClose: cyd293/ccatalog/products
+
+# Update page
+update:
+    title: Edit Product
+    redirect: cyd293/ccatalog/products
+    redirectClose: cyd293/ccatalog/products
+
+# Preview page
+preview:
+    title: Preview Product

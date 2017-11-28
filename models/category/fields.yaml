@@ -1,0 +1,73 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    category_name:
+        label: Name
+        span: auto
+        required: true
+    category_slug:
+        label: Slug
+        span: auto
+        preset: category_name
+        required: true
+
+tabs:
+    fields:
+        category_parent:
+            label: Parent Category
+            span: left
+            type: relation
+            emptyOption: --- Selection Empty ---
+            tab: Info
+            nameFrom: category_name
+        category_thumbnail:
+            label: Thumbnail
+            type: mediafinder
+            mode: image
+            imageHeight: 260
+            imageWidth: 260
+            tab: Info
+            span: right
+        category_description:
+            label: Description
+            type: markdown
+            size: small
+            tab: Info
+            span: left
+        category_banner:
+            label: Cover imageWidth
+            type: mediafinder
+            mode: image
+            imageWidth: 260
+            imageWidth: 260
+            tab: Info
+            span: right
+        category_content:
+            label: Content
+            type: markdown
+            size: huge
+            mode: split
+            tab: Content
+        category_tags:
+            nameFrom: tag_name
+            descriptionFrom: description
+            span: full
+            type: relation
+            tab: Tags
+        category_meta_title:
+            label: Meta Title
+            type: text
+            tab: SEO
+            span: auto
+        category_meta_keywords:
+            label: Meta Keywords
+            type: taglist
+            separator: space
+            tab: SEO
+            span: auto
+        category_meta_description:
+            label: Meta Description
+            type: textarea
+            tab: SEO

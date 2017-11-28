@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Property
+
+# Model Form Field configuration
+form: $/cyd293/ccatalog/models/property/fields.yaml
+
+# Model Class name
+modelClass: Cyd293\CCatalog\Models\Property
+
+# Default redirect location
+defaultRedirect: cyd293/ccatalog/properties
+
+# Create page
+create:
+    title: Create Property
+    redirect: cyd293/ccatalog/properties/update/:property_id
+    redirectClose: cyd293/ccatalog/properties
+
+# Update page
+update:
+    title: Edit Property
+    redirect: cyd293/ccatalog/properties
+    redirectClose: cyd293/ccatalog/properties
+
+# Preview page
+preview:
+    title: Preview Property

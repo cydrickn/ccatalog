@@ -1,0 +1,13 @@
+product_properties:
+    label: Properties
+    manage:
+        form: $/cyd293/ccatalog/models/property/fields.yaml
+        list: $/cyd293/ccatalog/models/property/columns.yaml
+        showSearch: true
+    view:
+        list: $/cyd293/ccatalog/models/property/columns_relation.yaml
+        toolbarButtons: add|remove
+    #    showSearch: true
+    pivot:
+        form: $/cyd293/ccatalog/models/property/_fields_relation.yaml
+    #    form: $/janvince/smallrecords/models/attribute/fields_relation.yaml

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Tag
+
+# Model Form Field configuration
+form: $/cyd293/ccatalog/models/tag/fields.yaml
+
+# Model Class name
+modelClass: Cyd293\CCatalog\Models\Tag
+
+# Default redirect location
+defaultRedirect: cyd293/ccatalog/tags
+
+# Create page
+create:
+    title: Create Tag
+    redirect: cyd293/ccatalog/tags/update/:tag_id
+    redirectClose: cyd293/ccatalog/tags
+
+# Update page
+update:
+    title: Edit Tag
+    redirect: cyd293/ccatalog/tags
+    redirectClose: cyd293/ccatalog/tags
+
+# Preview page
+preview:
+    title: Preview Tag

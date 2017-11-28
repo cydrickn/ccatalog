@@ -1,0 +1,15 @@
+
+<?= Block::put('body') ?>
+    <?= $this->listRender() ?>
+<?= Block::endPut('body') ?>
+
+<?= Block::put('head') ?>
+    <style type='text/css'>
+        .list-cell-name-brand_logo {
+            padding: 2px !important;
+        }
+        .list-cell-name-brand_logo img {
+            height: 35px;
+        }
+    </style>
+<?= Block::endPut('head') ?>

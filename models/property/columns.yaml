@@ -1,0 +1,14 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    property_name:
+        label: Name
+        searchable: true
+    property_slug:
+        label: Slug
+        searchable: true
+    property_type:
+        label: Type
+        searchable: false

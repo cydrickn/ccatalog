@@ -1,0 +1,32 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    brand_name:
+        label: Name
+        span: auto
+        required: true
+    brand_slug:
+        label: Slug
+        span: auto
+        required: true
+        preset: brand_name
+    brand_short_description:
+        label: Short Description
+        type: textarea
+        size: small
+    brand_description:
+        label: Description
+        type: markdown
+        size: huge
+        mode: split
+
+secondaryTabs:
+    fields:
+        brand_logo:
+            label: Logo
+            type: mediafinder
+            mode: image
+            imageHeight: 260
+            imageWidth: 260

@@ -1,0 +1,13 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    product_name:
+        label: Name
+        searchable: true
+    product_slug:
+        label: Slug
+        searchable: true
+    product_brand[brand_name]:
+        label: Brand

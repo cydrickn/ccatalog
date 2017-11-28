@@ -1,0 +1,39 @@
+fields:
+    property_name:
+        label:  Name
+        disabled: true
+        readonly: true
+    pivot[product_property_value]:
+        label: Value
+    _isPivot:
+        default: 1
+        disabled: true
+        hidden: true
+        readonly: true
+    property_type:
+        label: Type
+        span: auto
+        type: dropdown
+        disabled: true
+        hidden: true
+        readonly: true
+        options:
+            string: String
+            textarea: Text
+            number: Number
+            switch: Switch
+            dropdown: Dropdown
+    property_values:
+        label: Values
+        disabled: true
+        hidden: true
+        readonly: true
+        type: repeater
+        form:
+            fields:
+                name:
+                    label: Name
+                    span: auto
+                value:
+                    label: Value
+                    span: auto

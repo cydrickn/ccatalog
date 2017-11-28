@@ -1,0 +1,24 @@
+1.0.1:
+    - 'First version of CCatalog'
+1.0.2:
+    - 'Initialize CCatalog tables'
+    - create_brands_table.php
+    - create_properties_table.php
+    - create_categories_table.php
+    - create_products_table.php
+    - create_tags_table.php
+1.0.3:
+    - 'Add Product SEO'
+    - migration103.php
+1.0.4:
+    - 'Created table cyd293_ccatalog_link_tags'
+    - builder_table_create_cyd293_ccatalog_link_tags.php
+1.0.5:
+    - 'Created table cyd293_ccatalog_product_categories'
+    - builder_table_create_cyd293_ccatalog_product_categories.php
+1.0.6:
+    - 'Updated table cyd293_ccatalog_products'
+    - builder_table_update_cyd293_ccatalog_products.php
+1.0.7:
+    - 'Updated table cyd293_ccatalog_products'
+    - builder_table_update_cyd293_ccatalog_products_2.php

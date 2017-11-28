@@ -1,0 +1,13 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    category_name:
+        label: Name
+        searchable: true
+    category_slug:
+        label: Slug
+    category_description:
+        label: Description
+        searchable: true

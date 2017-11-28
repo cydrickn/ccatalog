@@ -1,0 +1,10 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    property_name:
+        label: Name
+        searchable: true
+    pivot[product_property_value]:
+        label: Value
