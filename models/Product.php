@@ -7,6 +7,8 @@ use Model;
  */
 class Product extends Model
 {
+    use \October\Rain\Database\Traits\Validation;
+    
     /**
     * The name of the "created at" column
     *
@@ -86,4 +88,11 @@ class Product extends Model
     public $attachMany = [
         'product_images' => 'System\Models\File',
     ];*/
+    
+    public $rules = [
+        'product_name' => ['required'],
+        'product_slug' => ['required'],
+        'product_meta_title' => ['required'],
+        'product_meta_keywords' => ['required'],
+    ];
 }

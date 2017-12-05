@@ -22,3 +22,6 @@
 1.0.7:
     - 'Updated table cyd293_ccatalog_products'
     - builder_table_update_cyd293_ccatalog_products_2.php
+1.0.8:
+    - 'Updated table cyd293_ccatalog_products'
+    - builder_table_update_cyd293_ccatalog_products_3.php

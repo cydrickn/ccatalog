@@ -83,12 +83,14 @@ tabs:
             span: auto
             type: text
             tab: SEO
+            required: true
         product_meta_keywords:
             label: 'Meta Keywords'
             type: taglist
             separator: comma
             tab: SEO
             span: auto
+            required: true
         product_meta_description:
             label: 'Meta Description'
             size: ''
